@@ -18,7 +18,7 @@ export class ConsoleComponent implements OnInit {
 
   queueLine($event) {
     this.consoleService.enqueue(this.line)
-    this.consoleService.pushToHistory(this.line)
+    this.consoleService.pushToHistory(`$ ${this.line}`, true)
     this.line = ''
     setTimeout( () => this.historyElement.nativeElement.scrollTop = 100000, 100)
 

@@ -29,12 +29,21 @@ export class ConsoleService {
     this.queue.push(value)
   }
 
-  pushToHistory(msg) {
+  pushToHistory(msg, noBuffer = false) {
     
+    if(msg === null) {
+      msg = 0;
+    }
+
     if(typeof msg === "boolean") {
       msg = msg ? "1" : "0"
     } 
     
+    if(noBuffer) {
+      this.history.push(msg)
+      return
+    }
+
     this.buffer += msg
     if(this.bufferInterval) {
       clearTimeout(this.bufferInterval)

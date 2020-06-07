@@ -1,7 +1,7 @@
 <div class="console" (click)="focusInput()">
     <div class="console-history" #history>
         <p class="console-entry" *ngFor="let entry of consoleService.history">
-            $ {{ entry }}
+            {{ entry }}
         </p>
     </div>
     <div class="console-editor">
