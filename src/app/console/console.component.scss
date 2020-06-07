@@ -1,0 +1,37 @@
+.console-container {
+    width: 100%;
+}
+.console {
+    width: 100%;
+    background-color: #000;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: Consolas;
+    font-size: 12px;
+    padding-bottom: 0;
+}
+
+.console-history {
+    flex: 1;
+    padding: 10px;
+    overflow-y: scroll;
+    p {
+        margin: 0px;
+    }
+}
+.console-editor {
+    background-color: #111;
+    padding: 5px;
+    display: flex;
+    margin-top: 5px;
+    input {
+        border: none;
+        flex: 1;
+        font-family: Consolas;
+        background-color: transparent;
+        padding-left: 5px;
+        margin-top: -2px;
+    }
+}

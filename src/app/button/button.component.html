@@ -1,0 +1,3 @@
+<div class="button-container" (click)="enableButton()">
+    <div [ngClass]="{'button': true, 'on': buttonService.buttons[buttonIndex] }"> {{ buttonIndex + 1 }}</div>
+</div>

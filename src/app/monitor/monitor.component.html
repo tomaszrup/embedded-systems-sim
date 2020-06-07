@@ -1,0 +1,9 @@
+<div class="monitor">
+    <p>Zmienne</p>
+    <div class="variables">
+        <div class="variable" *ngFor="let v of currentVars">
+            <span class="name">{{ v }}</span>
+            <span class="value"> {{ window[v] }} </span>
+        </div>
+    </div>
+</div>

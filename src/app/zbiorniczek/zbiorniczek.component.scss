@@ -1,0 +1,19 @@
+.console-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.buttons {
+
+    width: auto;
+    margin-bottom: 20px;
+    background-color: #222;
+    width: 100%;
+}
+
+.buttons-inner {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: 15px;
+}

@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="column left">
+        <div class="console-container">
+            <app-console></app-console>
+        </div>
+        <div class="buttons">
+            <div class="buttons-inner">
+                <app-button *ngFor="let button of buttonService.buttons; let i = index" [buttonIndex]="i"> </app-button>
+            </div>
+        </div>
+        <div class="controls">
+            <app-monitor #monitor></app-monitor>
+        </div>
+    </div>
+    <div class="column center">
+        <div class="container">
+            <div class="diodes">
+                <app-diode *ngFor="let diode of diodeService.diodes; let i = index" [diodeIndex]="i"> </app-diode>
+            </div>
+        </div>
+        <button (click)="toggle()" [ngClass]="{'startbtn': true, 'running': running }">
+            {{ running ? "Stop" : "Start" }}
+        </button>
+        <div class="textareas">
+            <app-code> </app-code>
+        </div>
+    </div>
+    <div class="column right">
+
+    </div>
+</div>

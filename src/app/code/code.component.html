@@ -1,0 +1,18 @@
+<div class="vars">
+  <ngx-codemirror [(ngModel)]="codeService.vars" [options]="{
+    lineNumbers: true,
+    theme: 'darcula',
+    mode: 'text/x-csrc',
+    line: true
+  }"></ngx-codemirror>
+</div>
+
+<div class="code">
+  <ngx-codemirror [(ngModel)]="codeService.code" [options]="{
+    lineNumbers: true,
+    theme: 'darcula',
+    mode: 'text/x-csrc',
+    line: true
+  }"></ngx-codemirror>
+
+</div>

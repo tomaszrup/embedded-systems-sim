@@ -1,0 +1,32 @@
+.diode-container {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+    user-select: none;
+    font-family: Roboto;
+    .diode-light {
+        background-color: black;
+        width: 100%;
+        height: 60px;
+        border-radius: 3px;
+        &.on {
+            background-color: red;
+        }
+    }
+    .diode-number {
+        color: white;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        text-align: center;
+        background-color: #555;
+        border-left: 1px solid #111;
+        border-bottom: 1px solid #111;
+        border-right: 1px solid #111;
+    }
+}

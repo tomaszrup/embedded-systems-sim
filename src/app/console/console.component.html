@@ -1,0 +1,10 @@
+<div class="console" (click)="focusInput()">
+    <div class="console-history" #history>
+        <p class="console-entry" *ngFor="let entry of consoleService.history">
+            $ {{ entry }}
+        </p>
+    </div>
+    <div class="console-editor">
+        $ <input type="text" [(ngModel)]="line" (keydown.enter)="queueLine($event);" id="console-input">
+    </div>
+</div>
