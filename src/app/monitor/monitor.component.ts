@@ -22,7 +22,7 @@ export class MonitorComponent implements OnInit {
     let newVars =Object.keys( window )
     this.currentVars = newVars.filter( (name) => {      
       return !this.originalVars.includes(name) && !name.startsWith("__")
-    })    
+    }).sort();  
   }
 
   resetVariables() {
