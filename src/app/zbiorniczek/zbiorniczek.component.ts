@@ -42,6 +42,8 @@ export class ZbiorniczekComponent implements OnInit {
     this.monitor.resetVariables()
     clearInterval(this.interval)
     this.interval = null
+    this.buttonService.buttons = [false, false, false, false, false, false, false];
+    this.diodeService.diodes = [false, false, false, false, false, false, false];
   }
 
   run() {
